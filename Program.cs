@@ -13,19 +13,7 @@ namespace KCB
     {
         static void Main(string[] args)
         {
-            string source = @"Documents\credentials";
-            //string destination = @"C:/Users/CJ\Downloads/KCB/KCB PROJECT";
-            string destination = @"C:\\Downloads\KCB";
-            string host = "127.0.0.1";
-            string username = "justus";
-            string password = "Brightsoft@20";
-            string port = "22";  //Port 22 is defaulted for SFTP upload
-
-            SendPaymentFile(host, username, password, source, destination, port);
-
-            System.Console.WriteLine(source);
-            Console.ReadLine();
-            WriteLog(source);
+          
         }
         //Parameters for sending Payment File
         public static void SendPaymentFile(string host, string username, string password, string remoteFilePath, string localFilePath, string port)
